@@ -3,16 +3,11 @@ const app = express()
 const cors = require('cors')
 const admin = require("firebase-admin");
 const ObjectId = require('mongodb').ObjectId;
-
-
 require('dotenv').config()
 const { MongoClient } = require('mongodb');
 const port = process.env.PORT|| 5000;
 
 // doctor-portals-adminsdk.json
-
-
-
 const serviceAccount = require('./doctor-portals-adminsdk.json');
 
 admin.initializeApp({
