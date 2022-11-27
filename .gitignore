@@ -1,3 +1,4 @@
 node_modules
 .env
 doctor-portals-adminsdk.json
+package-lock.json
