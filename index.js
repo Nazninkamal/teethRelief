@@ -1,18 +1,12 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const admin = require("firebase-admin");
 const ObjectId = require('mongodb').ObjectId;
 require('dotenv').config()
 const { MongoClient } = require('mongodb');
 const port = process.env.PORT|| 5000;
 
-// doctor-portals-adminsdk.json
-const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-});
 
 
 app.use(cors());
